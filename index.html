@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="outbd">
+        <input type="text" id="result" readonly>
+        <div id="Btn">
+           <button onclick="val= '';
+            document.querySelector('#result').value=val;
+            ">C</button>
+            <button onclick="val+=1;
+            document.querySelector('#result').value=val;
+            ">1</button>
+            <button onclick="val+=2;
+            document.querySelector('#result').value=val;
+            ">2</button>
+            <button onclick="val=val+'+';
+            document.querySelector('#result').value=val;
+            ">+</button>
+            <button onclick="val+=3;
+            document.querySelector('#result').value=val;
+            ">3</button>
+            <button onclick="val+=4;
+            document.querySelector('#result').value=val;
+            ">4</button>
+            <button onclick="val=val+'-';
+            document.querySelector('#result').value=val;
+            ">-</button>
+            <button onclick="val+=5;
+            document.querySelector('#result').value=val;
+            ">5</button>
+            <button onclick="val+=6;
+            document.querySelector('#result').value=val;
+            ">6</button>
+            <button onclick="val=val+'*';
+            document.querySelector('#result').value=val;
+            ">*</button>
+            <button onclick="val+=7;
+            document.querySelector('#result').value=val;
+            ">7</button>
+            <button onclick="val+=8;
+            document.querySelector('#result').value=val;
+            ">8</button>
+            <button onclick="val=val+'/';
+            document.querySelector('#result').value=val;
+            ">/</button>
+            <button onclick="val+=9;
+            document.querySelector('#result').value=val;
+            ">9</button>
+            <button onclick="val+=0;
+            document.querySelector('#result').value=val;
+            ">0</button>
+            <button onclick="val+= '.' ;
+            document.querySelector('#result').value=val;
+            ">.</button>
+            <button onclick="
+            let ans=eval(val);
+            val=ans;
+            document.querySelector('#result').value=val;
+            ">=</button>
+        </div>
+    </div>
+    <script>
+        let val="";
+        document.querySelector("#result").value=val;
+    </script>
+</body>
+</html>
